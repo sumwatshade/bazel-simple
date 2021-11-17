@@ -9,8 +9,8 @@
     ]
   },
   "scripts": {
-    "build": "yarn bazel build --remote_cache=https://app-e2e-ux-infra-bazel-cache.ipuxfabricppdusw2.iks2.a.intuit.com //...",
-    "test": "yarn bazel test --remote_cache=https://app-e2e-ux-infra-bazel-cache.ipuxfabricppdusw2.iks2.a.intuit.com //..."
+    "build": "yarn bazel build //...",
+    "test": "yarn bazel test //..."
   },
   "repository": "git@github.intuit.com:lshadler/bazel-simple.git",
   "author": "lshadler <lucas_shadler@intuit.com>",
