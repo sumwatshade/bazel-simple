@@ -21,7 +21,9 @@ ts_project(
     deps = [
         "@npm//chalk",
         "//packages/utils:src"
-    ]
+    ],
+    root_dir = "src",
+    out_dir = "lib",
 )
 
 js_library(

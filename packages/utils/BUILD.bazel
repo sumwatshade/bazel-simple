@@ -18,9 +18,9 @@ ts_project(
             "declaration": True,
         },
     },
-    deps = [
-        
-    ]
+    deps = [],
+    root_dir = "src",
+    out_dir = "lib",
 )
 
 js_library(
