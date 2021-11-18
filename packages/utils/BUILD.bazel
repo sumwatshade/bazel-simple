@@ -19,14 +19,13 @@ ts_project(
         },
     },
     deps = [
-        "@npm//chalk",
-        "//packages/utils:src"
+        
     ]
 )
 
 js_library(
     name = "src",
-    package_name = "@package/core",
+    package_name = "@package/utils",
     srcs = [
         "package.json"
     ],

@@ -1,8 +1,8 @@
 {
   "name": "core",
   "version": "1.0.0",
-  "main": "src/main.js",
-  "types": "src/main.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "author": "lshadler",
   "license": "ISC",
   "dependencies": {

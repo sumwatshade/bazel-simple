@@ -1,5 +1,5 @@
 workspace(
-    name = "bazel_module_federation",
+    name = "bazel_simple",
     managed_directories = {"@npm": ["node_modules"]},
 )
 
@@ -24,7 +24,3 @@ yarn_install(
     package_json = "//:package.json",
     yarn_lock = "//:yarn.lock",
 )
-
-load("@build_bazel_rules_nodejs//toolchains/esbuild:esbuild_repositories.bzl", "esbuild_repositories")
-
-esbuild_repositories()
