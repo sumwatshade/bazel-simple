@@ -84,7 +84,7 @@ pkg_npm(
     name = "release",
     tgz = "core.tgz",
     substitutions = {
-        '1.0.0-PLACEHOLDER': "${VERSION}"
+        '1.0.0-PLACEHOLDER': "${MY_VERSION}"
     },
     deps = [
         ":src",
