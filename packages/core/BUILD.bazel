@@ -1,5 +1,5 @@
 
-load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
+load("@build_bazel_rules_nodejs//:index.bzl", "js_library", "pkg_npm")
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 load("@npm//jest-cli:index.bzl", "jest_test")
 
@@ -78,4 +78,17 @@ jest_test(
         # TODO: why does this fail almost all the time, but pass on local Mac?
         "no-bazelci-mac",
     ],
+)
+
+pkg_npm(
+    name = "release",
+    tgz = "core.tgz",
+    substitutions = {
+        '1.0.0-PLACEHOLDER': "${VERSION}"
+    },
+    deps = [
+        ":src",
+        "//:VERSION"
+    ],
+    package_name = "@sumwatshade/core"
 )

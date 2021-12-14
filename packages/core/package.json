@@ -1,6 +1,6 @@
 {
   "name": "@package/utils",
-  "version": "1.0.0",
+  "version": "1.0.0-PLACEHOLDER",
   "main": "lib/main.js",
   "types": "lib/main.d.ts",
   "author": "lshadler",
